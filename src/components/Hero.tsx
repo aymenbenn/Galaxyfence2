@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Shield, Award, Star, CheckCircle } from 'lucide-react'
-import heroImage from "../assets/hero.jpeg"
+import heroImage from "../assets/hero.jpg"
 interface HeroProps {
   onOpenQuoteModal: () => void
 }
