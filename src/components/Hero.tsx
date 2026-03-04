@@ -28,10 +28,10 @@ export function Hero({ onOpenQuoteModal }: HeroProps) {
 />
         
         {/* Dark Overlay (adjust opacity if too dark) */}
-        <div className="absolute inset-0 bg-navy/70 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-navy/20 mix-blend-multiply" />
         
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-navy/90 via-navy/60 to-navy/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-navy/40 via-navy/20 to-navy/40" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
