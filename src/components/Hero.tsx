@@ -22,7 +22,7 @@ export function Hero({ onOpenQuoteModal }: HeroProps) {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/hero.jpeg"
+          src="/images/hero.jpg"
           alt="Beautiful residential fence installation"
           className="w-full h-full object-cover object-center"
         />
