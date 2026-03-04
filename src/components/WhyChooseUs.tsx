@@ -1,0 +1,91 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Clock, ShieldCheck, Award, Zap } from 'lucide-react';
+export function WhyChooseUs() {
+  const reasons = [
+  {
+    icon: Clock,
+    title: 'Experience',
+    description:
+    '38+ years serving Metro Detroit homeowners and businesses with expert fence installations since 1986.'
+  },
+  {
+    icon: ShieldCheck,
+    title: 'Quality',
+    description:
+    'Professional installation using only premium materials backed by extensive manufacturer warranties.'
+  },
+  {
+    icon: Award,
+    title: 'Trust',
+    description:
+    'Fully licensed, insured, and award-winning service recognized by the American Fence Association.'
+  },
+  {
+    icon: Zap,
+    title: 'Service',
+    description:
+    'Fast, free estimates, friendly support, and a commitment to 100% customer satisfaction on every job.'
+  }];
+
+  return (
+    <section className="py-20 bg-white border-y border-gray-100">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 20
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0
+          }}
+          viewport={{
+            once: true,
+            margin: '-100px'
+          }}
+          className="text-center max-w-3xl mx-auto mb-16">
+
+          <h2 className="text-3xl md:text-4xl font-bold text-navy mb-4">
+            Why Homeowners Trust Galaxy Fence
+          </h2>
+          <div className="w-24 h-1 bg-forest mx-auto rounded-full" />
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {reasons.map((reason, index) =>
+          <motion.div
+            key={index}
+            initial={{
+              opacity: 0,
+              y: 30
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0
+            }}
+            viewport={{
+              once: true,
+              margin: '-50px'
+            }}
+            transition={{
+              delay: index * 0.1
+            }}
+            className="bg-warm rounded-xl p-8 text-center border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+
+              <div className="mx-auto w-16 h-16 bg-navy rounded-full flex items-center justify-center mb-6 shadow-inner">
+                <reason.icon className="h-8 w-8 text-gold" />
+              </div>
+              <h3 className="text-xl font-bold text-navy mb-3">
+                {reason.title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                {reason.description}
+              </p>
+            </motion.div>
+          )}
+        </div>
+      </div>
+    </section>);
+
+}
