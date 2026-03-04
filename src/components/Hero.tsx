@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Shield, Award, Star, CheckCircle } from 'lucide-react'
-
+import heroImage from "../assets/hero.jpeg"
 interface HeroProps {
   onOpenQuoteModal: () => void
 }
@@ -21,11 +21,11 @@ export function Hero({ onOpenQuoteModal }: HeroProps) {
     >
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="/images/hero.jpg"
-          alt="Beautiful residential fence installation"
-          className="w-full h-full object-cover object-center"
-        />
+      <img
+  src={heroImage}
+  alt="Fence installation"
+  className="w-full h-full object-cover object-center"
+/>
         
         {/* Dark Overlay (adjust opacity if too dark) */}
         <div className="absolute inset-0 bg-navy/70 mix-blend-multiply" />
