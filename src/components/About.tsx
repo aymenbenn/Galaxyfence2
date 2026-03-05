@@ -26,12 +26,12 @@ export function About() {
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-gold/20 rounded-full blur-2xl"></div>
               <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-forest/20 rounded-full blur-2xl"></div>
 
-              {/* Updated image to local CEO image */}
-             <img
-  src={require('../assets/ceo.png')}
-  alt="Galaxy Fence CEO"
-  className="relative rounded-2xl shadow-2xl object-cover aspect-[4/3] w-full"
-/>
+              {/* Corrected image */}
+              <img
+                src={ceoImage}
+                alt="Galaxy Fence CEO"
+                className="relative rounded-2xl shadow-2xl object-cover aspect-[4/3] w-full"
+              />
 
               <div className="absolute -bottom-6 -right-6 bg-navy text-white p-6 rounded-xl shadow-xl hidden md:block">
                 <p className="text-4xl font-extrabold text-gold mb-1">38+</p>
