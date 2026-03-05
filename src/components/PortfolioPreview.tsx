@@ -2,38 +2,22 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 
+// Import your local images using .jpeg
+import vinylPrivacy from '../assets/portfolio/vinyl-privacy.jpeg';
+import aluminum from '../assets/portfolio/aluminum.jpeg';
+import wood from '../assets/portfolio/wood.jpeg';
+import chainLink from '../assets/portfolio/chain-link.jpeg';
+import commercial from '../assets/portfolio/commercial.jpeg';
+import beforeAfter from '../assets/portfolio/before-after.jpeg';
+
 export function PortfolioPreview() {
   const portfolioItems = [
-    {
-      title: 'Vinyl Privacy',
-      image: require('../assets/portfolio/vinyl-privacy.JPG'),
-      alt: 'White vinyl privacy fence installation',
-    },
-    {
-      title: 'Aluminum',
-      image: require('../assets/portfolio/aluminum.JPG'),
-      alt: 'Black aluminum ornamental fence',
-    },
-    {
-      title: 'Wood',
-      image: require('../assets/portfolio/wood.JPG'),
-      alt: 'Custom wood privacy fence',
-    },
-    {
-      title: 'Chain Link',
-      image: require('../assets/portfolio/chain-link.JPG'),
-      alt: 'Residential chain link fence',
-    },
-    {
-      title: 'Commercial',
-      image: require('../assets/portfolio/commercial.JPG'),
-      alt: 'Commercial security fencing',
-    },
-    {
-      title: 'Before & After',
-      image: require('../assets/portfolio/before-after.JPG'),
-      alt: 'Fence replacement before and after',
-    },
+    { title: 'Vinyl Privacy', image: vinylPrivacy, alt: 'White vinyl privacy fence installation' },
+    { title: 'Aluminum', image: aluminum, alt: 'Black aluminum ornamental fence' },
+    { title: 'Wood', image: wood, alt: 'Custom wood privacy fence' },
+    { title: 'Chain Link', image: chainLink, alt: 'Residential chain link fence' },
+    { title: 'Commercial', image: commercial, alt: 'Commercial security fencing' },
+    { title: 'Before & After', image: beforeAfter, alt: 'Fence replacement before and after' },
   ];
 
   return (
@@ -50,8 +34,7 @@ export function PortfolioPreview() {
               Recent Fence Installations Near You
             </h2>
             <p className="text-lg text-gray-600">
-              Browse our gallery of recent projects across Metro Detroit. We
-              take pride in every post we set and every panel we install.
+              Browse our gallery of recent projects across Metro Detroit. We take pride in every post we set and every panel we install.
             </p>
           </motion.div>
 
@@ -82,9 +65,7 @@ export function PortfolioPreview() {
                 alt={item.alt}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
-
               <div className="absolute inset-0 bg-gradient-to-t from-navy/90 via-navy/20 to-transparent opacity-80 transition-opacity duration-300" />
-
               <div className="absolute bottom-0 left-0 p-6 w-full transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                 <h3 className="text-xl font-bold text-white mb-1">{item.title}</h3>
                 <div className="w-12 h-1 bg-gold rounded-full transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
