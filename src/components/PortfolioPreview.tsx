@@ -2,44 +2,36 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 
-// Import your local images from src/assets/portfolio
-import vinylPrivacy from '../assets/portfolio/vinyl-privacy.JPG';
-import aluminum from '../assets/portfolio/aluminum.JPG';
-import wood from '../assets/portfolio/wood.JPG';
-import chainLink from '../assets/portfolio/chain-link.JPG';
-import commercial from '../assets/portfolio/commercial.JPG';
-import beforeAfter from '../assets/portfolio/before-after.JPG';
-
 export function PortfolioPreview() {
   const portfolioItems = [
     {
       title: 'Vinyl Privacy',
-      image: vinylPrivacy,
+      image: require('../assets/portfolio/vinyl-privacy.JPG'),
       alt: 'White vinyl privacy fence installation',
     },
     {
       title: 'Aluminum',
-      image: aluminum,
+      image: require('../assets/portfolio/aluminum.JPG'),
       alt: 'Black aluminum ornamental fence',
     },
     {
       title: 'Wood',
-      image: wood,
+      image: require('../assets/portfolio/wood.JPG'),
       alt: 'Custom wood privacy fence',
     },
     {
       title: 'Chain Link',
-      image: chainLink,
+      image: require('../assets/portfolio/chain-link.JPG'),
       alt: 'Residential chain link fence',
     },
     {
       title: 'Commercial',
-      image: commercial,
+      image: require('../assets/portfolio/commercial.JPG'),
       alt: 'Commercial security fencing',
     },
     {
       title: 'Before & After',
-      image: beforeAfter,
+      image: require('../assets/portfolio/before-after.JPG'),
       alt: 'Fence replacement before and after',
     },
   ];
