@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 
 // Import your local images from src/assets/portfolio
-import vinylPrivacy from '../assets/portfolio/vinyl-privacy.jpg';
-import aluminum from '../assets/portfolio/aluminum.jpg';
-import wood from '../assets/portfolio/wood.jpg';
-import chainLink from '../assets/portfolio/chain-link.jpg';
-import commercial from '../assets/portfolio/commercial.jpg';
-import beforeAfter from '../assets/portfolio/before-after.jpg';
+import vinylPrivacy from '../assets/portfolio/vinyl-privacy.JPG';
+import aluminum from '../assets/portfolio/aluminum.JPG';
+import wood from '../assets/portfolio/wood.JPG';
+import chainLink from '../assets/portfolio/chain-link.JPG';
+import commercial from '../assets/portfolio/commercial.JPG';
+import beforeAfter from '../assets/portfolio/before-after.JPG';
 
 export function PortfolioPreview() {
   const portfolioItems = [
